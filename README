@@ -1,0 +1,11 @@
+
+    # This code defines a Dataflow pipeline that reads a CSV file from Google Cloud Storage, cleans the data by stripping whitespace from each column, and writes the cleaned data back to Cloud Storage. The CleanDataFn class is defined directly in the same file, and the pipeline is configured to run on Google Cloud Dataflow with appropriate options for project, region, and worker configuration.
+    # Key points:
+    # - The CleanDataFn class is a DoFn that processes each line of the input CSV, splits it into columns, strips whitespace, and yields the cleaned line.
+    # - The pipeline is set up with options for Google Cloud, including project ID, region  and temporary/staging locations.
+    # - The pipeline reads from a specified input CSV file, applies the cleaning transformation, and            
+    #   writes the results to an output location in Cloud Storage.
+    # - The job is submitted to Dataflow, and logging is set to INFO level for better visibility of the pipeline execution.     
+    # To run this code, ensure you have the Apache Beam SDK installed and configured with your Google Cloud credentials. Then, execute the script, and it will submit the job to Dataflow for processing.
+
+
